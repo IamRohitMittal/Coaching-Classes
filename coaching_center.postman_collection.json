@@ -1,0 +1,329 @@
+{
+	"id": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+	"name": "coaching_center",
+	"description": "",
+	"order": [
+		"3eb016cc-41ca-47de-b4a7-975e1aed9a11",
+		"a1e67d08-5d7d-5958-6064-34716a6c4321",
+		"757d15b4-4148-058c-f83d-bf29208c3f63",
+		"fa19f1f4-ca69-c818-a22a-7994b23619dc",
+		"5d38b635-a27f-4273-824a-0ffb6c968b54",
+		"48cd9ca3-12f2-7d3d-1f3c-aa60dadcfb29",
+		"d681c3fb-b104-a7cc-1809-2359ed3a4406",
+		"02983e5f-c42b-2908-b586-26571611224c",
+		"e91ad566-e5ca-746f-7236-843537cdcfdd"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1607140005910,
+	"owner": "11022517",
+	"public": false,
+	"requests": [
+		{
+			"id": "02983e5f-c42b-2908-b586-26571611224c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/enroll",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Enroll For Subject",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607681753382,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"studentId\":2,\n\t\"subjectId\":6\n}"
+		},
+		{
+			"id": "3eb016cc-41ca-47de-b4a7-975e1aed9a11",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8083/api/user-service/v1/subjects/17",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": null,
+			"dataMode": "params",
+			"name": "Delete Subject by SubjectId",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607647842854,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "48cd9ca3-12f2-7d3d-1f3c-aa60dadcfb29",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607678688788,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"email\":\"rohit.mittal@gmail.com\",\n\t\"password\":\"Rohit.mittal@123\",\n\t\"roleId\":2\n}"
+		},
+		{
+			"id": "5d38b635-a27f-4273-824a-0ffb6c968b54",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1607677038934,
+			"name": "Create Teachers(roleId:1)/Student(roleId:2)",
+			"description": "",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"responses": [],
+			"rawModeData": "{\n\t\"name\":\"Raghav\",\n\t\"email\":\"rohit.mittal@gmail.com\",\n\t\"password\":\"Rohit.mittal@123\",\n\t\"roleId\":2\n}"
+		},
+		{
+			"id": "757d15b4-4148-058c-f83d-bf29208c3f63",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/subjects?teacherId=1",
+			"queryParams": [
+				{
+					"key": "teacherId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create Subject",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607647888302,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"subjectName\":\"Analytica\"\n}"
+		},
+		{
+			"id": "a1e67d08-5d7d-5958-6064-34716a6c4321",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/subjects/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Subject by SubjectId",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607647869435,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"subjectName\":\"Analytics\",\n\t\"teacherId\":1\n}"
+		},
+		{
+			"id": "d681c3fb-b104-a7cc-1809-2359ed3a4406",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:8083/api/user-service/v1/attendance?studentId=2&subjectId=1",
+			"queryParams": [
+				{
+					"key": "studentId",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "subjectId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Attendance",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607679191045,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "e91ad566-e5ca-746f-7236-843537cdcfdd",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/attendance?studentId=2&subjectId=6",
+			"queryParams": [
+				{
+					"key": "studentId",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "subjectId",
+					"value": "6",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Update Attendance for a student and subject",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607681984949,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"attendance\":80\n}"
+		},
+		{
+			"id": "fa19f1f4-ca69-c818-a22a-7994b23619dc",
+			"headers": "//teacherId: 1\n",
+			"headerData": [
+				{
+					"key": "teacherId",
+					"value": "1",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "localhost:8083/api/user-service/v1/subjects?teacherId=1",
+			"queryParams": [
+				{
+					"key": "teacherId",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6fa0bb0c-33ba-5f91-91f8-6dbc6dd23368",
+			"data": null,
+			"dataMode": "params",
+			"name": "Get Subjects By TeacherId",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1607647906454,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
